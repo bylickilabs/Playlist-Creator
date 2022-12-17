@@ -67,3 +67,21 @@ echo                   ---------------------------------------
 echo                   70%%%
 echo                   ---------------------------------------
 ping localhost -n 1 >nul
+
+cls
+echo.
+echo.
+echo                    Loading
+echo                   ---------------------------------------
+echo                   80%%%
+echo                   ---------------------------------------
+ping localhost -n 1 >nul
+
+cls
+echo.
+echo.
+echo                    Loading
+echo                   ---------------------------------------
+echo                   90%%%
+echo                   ---------------------------------------
+ping localhost -n 1 >nul
