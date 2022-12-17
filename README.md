@@ -9,3 +9,7 @@ Title Bylickilabs Playlist Creator
 echo.
 echo.
 echo                    Loading
+echo                   ---------------------------------------
+echo                   10%%% 
+echo                   ---------------------------------------
+ping localhost -n 3 >nul
