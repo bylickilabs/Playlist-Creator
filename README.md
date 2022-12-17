@@ -130,3 +130,43 @@ if %op%==2 goto 2
 if %op%==3 goto 3
 if %op%==4 goto Exit
 goto error
+
+:1
+Pushd %1
+Pushd "%1"
+dir /b >Playlist-Creator.txt
+Pushd "%1"
+dir /b /s *.mp* *.mp4* *.ogg* *.fla* *.mp3* *.ape* *.aac* *.wv* *.wav* >PlayerListe.m3u
+echo.
+goto main
+
+:2
+cls
+echo.
+echo                                 ###################
+echo                                 ## Informationen ##
+echo                                 ###################
+echo.
+echo.
+echo      #######################################################################
+echo      #                                                                     #
+echo      #                  Willkommen zu meinem PlaylistCreator               # 
+echo      #                                                                     #
+echo      #     Wenn ihnen die Anwendung zusagt, Kontaktieren sie mich bitte    #
+echo      #######################################################################
+echo.
+echo.
+echo    ##########################################################################
+echo    #                                                                        #
+echo    #           Das erstellen der Playlist soll vereinfacht werden.          #
+echo    #                                                                        #
+echo    #       Kopieren sie die Anwendung einfach in das Hauptverzeichnis       #
+echo    #           und starten sie diese. Das erstellen der Playlist,           #
+echo    #               beginnt sofort und dauert ca.1 Sekunde...                #
+echo    #            Es wird eine .m3u Datei zum abspielen generiert,            #
+echo    #                                                                        #
+echo    ##########################################################################
+echo.
+echo                            mit beliebiger Taste weiter...
+pause >nul
+goto main
