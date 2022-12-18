@@ -170,3 +170,21 @@ echo.
 echo                            mit beliebiger Taste weiter...
 pause >nul
 goto main
+
+:3
+cls
+echo.
+echo                 Fragen, Anregungen, Fehler, Verbesserungen an:
+echo.
+echo                      Kontakt:   - Thorsten Bylicki
+echo.
+echo                                 - https://www.bylickilabs.de
+echo.
+echo                                 - https://Github.com/bylickilabs
+echo.
+echo.
+pause 
+goto main
+
+:Exit
+``` 
